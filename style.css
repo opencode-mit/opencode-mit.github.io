@@ -390,6 +390,17 @@ h2 {
     display: flex;
 }
 
+.nice-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+.nice-link:hover {
+    background: white;
+    filter: invert(1);
+}
+
 @media only screen and (max-width: 110ch) {
     nav {
         flex-direction: column;
