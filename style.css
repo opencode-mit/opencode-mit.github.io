@@ -4,6 +4,7 @@ body {
     --website-color: #2d3339;
     background: url('/images/background.webp'), var(--website-color);
     padding: 0 1em 1em 1em;
+    line-height: 2.5em;
 }
 
 nav {
@@ -63,7 +64,7 @@ nav {
 }
 
 main {
-    padding: 0.4em;
+    padding: 0.8em;
     font-size: 1.5em;
     background-color: white;
     max-width: 70rem;
@@ -399,6 +400,30 @@ h2 {
 .nice-link:hover {
     background: white;
     filter: invert(1);
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.nice-button {
+    appearance: none;
+    background: white;
+    border: 2px solid var(--website-color);
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    min-width: 15ch;
+    padding: 0.3em 0.6em;
+}
+
+.nice-button:hover {
+    background: black;
+    color: white;
 }
 
 @media only screen and (max-width: 110ch) {
