@@ -2,7 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     --website-color: #2d3339;
-    background: url('/images/background.png'), var(--website-color);
+    background: url('/images/background.webp'), var(--website-color);
     padding: 0 1em 1em 1em;
 }
 
