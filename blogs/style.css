@@ -37,3 +37,12 @@ section {
     max-width: 30ch;
     margin: auto;
 }
+
+.blog-details {
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 60%);
+    justify-content: center;
+    font-size: 0.6em;
+    font-family: 'Figtree';
+}
