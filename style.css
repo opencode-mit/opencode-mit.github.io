@@ -4,7 +4,6 @@ body {
     --website-color: #2d3339;
     background: url('/images/background.webp'), var(--website-color);
     padding: 0 1em 1em 1em;
-    line-height: 2.5em;
 }
 
 nav {
@@ -204,6 +203,7 @@ h2 {
     max-width: 1.5em;
     border: 2px solid white;
     border-radius: 100%;
+    overflow: hidden;
 }
 
 .dev-item:not(:first-child) {
@@ -213,7 +213,6 @@ h2 {
 .dev-item img {
     height: 100%;
     width: 100%;
-    border-radius: 100%;
 }
 
 .event-container {
@@ -300,6 +299,7 @@ h2 {
     display: flex;
     border: 2px solid var(--website-color);
     border-radius: 100%;
+    overflow: hidden;
     margin: -0.2em 0;
 }
 
@@ -309,7 +309,6 @@ h2 {
     padding: 0.2em;
     box-sizing: border-box;
     background: white;
-    border-radius: 100%;
 }
 
 .person-project:not(:first-child) {
