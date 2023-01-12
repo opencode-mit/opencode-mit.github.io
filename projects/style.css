@@ -1,0 +1,52 @@
+.header-line {
+    display: flex;
+    font-size: 4em;
+    font-family: 'Jost';
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.2em;
+}
+
+h1 {
+    margin: 0;
+    font-size: inherit;
+}
+
+h2 {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin-top: 0.2em;
+    text-align: center;
+}
+
+.header-line img {
+    height: 1.2em;
+    align-self: center;
+}
+
+.empty-image-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.empty-image-link img {
+    max-height: 1.2em;
+    max-width: 1.2em;
+}
+
+.empty-image-link:hover {
+    background: white;
+    color: black;
+    filter: invert(1);
+}
+
+.header-line .empty-image-link {
+    font-size: 0.4em;
+}

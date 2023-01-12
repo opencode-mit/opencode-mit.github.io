@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCode @ MIT</title>
+    <link rel="icon" href="/images/black_mux.svg" type="image/x-icon" />
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/blogs/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Lato:wght@400;700&Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="/" id="name">
+            <img id="logo" alt="open code logo" src="images/grey_mux.svg">
+            <div id="name-text">
+                OpenCode @ MIT
+            </div>
+        </a>
+        <div id="nav-link-container">
+            <a href="/projects.html" class="nav-link">Projects</a>
+            <a href="/events.html" class="nav-link">Events</a>
+            <a href="/blogs.html" class="nav-link">Blog</a>
+            <a href="/members.html" class="nav-link">Members</a>
+            <a href="https://github.com/opencode-mit" class="nav-link nav-image-container" target="_blank">
+                <img alt="github logo" src="/images/github.svg" class="nav-image">
+            </a>
+        </div>
+    </nav>
+    <main>
+        <h1>Convert Images with 'Converter' in Linux</h1>
+        <img alt="converter app with an image open" src="thumbnail.png" class="thumbnail">
+        <div class="subtext">A GUI front-end for ImageMagick to convert and manipulate images built with GTK4 and Libadwaita.</div>
+        <section>
+            <h2>The "Why?"</h2>
+            <img alt="a conversation between me and my friend barish on discord that says: 'barish, consider, what if we made a linux app that is based on imagemagick and does file conversions and doesn't look like absolute garbage'" src="image0.png" class="embed-image">
+            <p>
+                I have wasted a lot of my time searching for a reasonable tool that lets me convert images easily. It's also questionable if you should upload your images online to convert them, espicially if these websites are not open-source. I have found that ImageMagick tool is very good at this. However it's only CLI and almost all attempts to make a GUI for it turns out to be a very complicated design. I use GNOME desktop environment mainly and have decided to make a GUI tool based on the updated graphics tool GTK4 and Libadwaita.
+            </p>
+        </section>
+        <section>
+            <h2>Goals</h2>
+            <p>
+                First and foremost, it should have a simple interface that looks good with GNOME. Second, it should be completely offline and never make any web requests. Third, it should easily be installed from any Linux distro.
+            </p>
+        </section>
+        <section>
+            <h2>The "How?"</h2>
+            <p>
+                I don't have a prior experience developing applications for Linux. So I decided to start with something <i>simpler</i>. Here's a helpful advice, if you can't create app, find another app that achieves similar goals and fork it. Now you must review the code and learn from it. After you get a general idea of what's going on, you should be able to make the necessary changes to implement your app.
+            </p>
+            <p>
+                To follow the previously mentioned advice, I decided to fork <a href="https://gitlab.com/TheEvilSkeleton/Upscaler" target="_blank">Upscaler</a>. The interface is very similar to what I have in mind, so I decided to give it a try.
+            </p>
+        </section>
+        <section>
+            <h2>Results</h2>
+            <p>
+                After a few weeks of work. I got Converter running and it's now available for all Linux users to install through <a href="https://flathub.org/apps/details/io.gitlab.adhami3310.Converter" target="_blank">Flathub</a> as a Flatpak. The source code is available on <a href="https://gitlab.com/adhami3310/Converter" target="_blank">Gitlab</a>. It supports JPG, PNG, WEBP, SVG, HEIF/HEIC, BMP, AVIF, JXL, PDF, TIFF, PDF, GIF, and ICO. It also supports resizing images using multiple functions. It also supports splitting animated pictures into their individual frames. Finally, it supports batch processing of images. I made an application for Converter to be added into the <a href="https://circle.gnome.org/">GNOME circle</a>. Wish me success in that!
+            </p>
+        </section>
+        <section>
+            <h2>What I learned</h2>
+            <p>
+                I learned how to develop GUI apps with GTK4 and Libadwaita. I learned how to maintain Flatpak apps on the Flathub. I learned how i18n works with gettext. I learned how to work with a team of strangers, reply to issues and pull requests.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
