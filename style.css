@@ -224,7 +224,7 @@ h2 {
 .event {
     border: 4px solid var(--website-color);
     max-width: 40ch;
-    margin: auto;
+    margin: 0.5em auto;
     display: flex;
     flex-direction: column;
 }
